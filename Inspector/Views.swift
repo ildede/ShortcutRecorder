@@ -34,7 +34,7 @@ extension NSView {
 
     static var scaleToken = "scale"
 
-    @IBInspectable var drawsChessboard: Bool {
+    var drawsChessboard: Bool {
         get {
             return objc_getAssociatedObject(self, &NSView.drawsChessboardToken) as? Bool ?? false
         }
@@ -45,7 +45,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var chessboardPrimaryColor: NSColor {
+    var chessboardPrimaryColor: NSColor {
         get {
             return objc_getAssociatedObject(self, &NSView.chessboardPrimaryColorToken) as? NSColor ?? NSColor.textBackgroundColor
         }
@@ -56,7 +56,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var chessboardSecondaryColor: NSColor {
+    var chessboardSecondaryColor: NSColor {
         get {
             return objc_getAssociatedObject(self, &NSView.chessboardSecondaryColorToken) as? NSColor ?? NSColor.tertiaryLabelColor
         }
@@ -67,7 +67,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var drawsBaseline: Bool {
+    var drawsBaseline: Bool {
         get {
             return objc_getAssociatedObject(self, &NSView.drawsBaselineToken) as? Bool ?? false
         }
@@ -78,7 +78,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var baselinePrimaryColor: NSColor {
+    var baselinePrimaryColor: NSColor {
         get {
             return objc_getAssociatedObject(self, &NSView.baselinePrimaryColorToken) as? NSColor ?? NSColor.red
         }
@@ -89,7 +89,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var baselineSecondaryColor: NSColor {
+    var baselineSecondaryColor: NSColor {
         get {
             return objc_getAssociatedObject(self, &NSView.baselineSecondaryColorToken) as? NSColor ?? NSColor.blue
         }
@@ -100,7 +100,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var drawsAlignmentRect: Bool {
+    var drawsAlignmentRect: Bool {
         get {
             return objc_getAssociatedObject(self, &NSView.drawsAlignmentRectToken) as? Bool ?? false
         }
@@ -111,7 +111,7 @@ extension NSView {
         }
     }
 
-    @IBInspectable var alignmentRectColor: NSColor {
+    var alignmentRectColor: NSColor {
         get {
             return objc_getAssociatedObject(self, &NSView.alignmentRectColorToken) as? NSColor ?? NSColor.red
         }
